@@ -1,2 +1,24 @@
-codigo 
-codigo codigo
+print('Bem-vinda ao sistema de planos de saúde desenvolvido por Suzana Pereira!')
+
+idade = int(input('Digite sua idade: '))
+valorBase = float(input('Digite o valor base do plano: '))
+
+if idade >= 0 and idade < 19:
+    juros = 100
+
+elif idade >= 19 and idade < 29:
+    juros = 150
+
+elif idade >= 29 and idade < 39:
+    juros = 225
+
+elif idade >= 39 and idade < 49:
+     juros = 240
+
+elif idade >= 49 and idade < 59:
+    juros = 350
+
+else:
+   juros = 600
+
+valorMensal = juros * valorBase /100                 #cálculo do valor mensal do plano
